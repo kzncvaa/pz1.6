@@ -1,0 +1,71 @@
+.grid-wrapper{
+    display: grid;
+    grid-template-areas: "a a a b"
+                         "c c c b"
+                         "d d d d";
+}
+.grid-item{
+    width: 100%;
+    min-height: 100px;
+}
+.grid-item:nth-child(1){
+    grid-area: a;
+    background-color: pink;
+}.grid-item:nth-child(2){
+    grid-area: b;
+    background-color: rgb(162, 94, 106);
+}.grid-item:nth-child(3){
+    height: 100%;
+    grid-area: c;
+    background-color: rgb(138, 58, 199);
+}.grid-item:nth-child(4){
+    grid-area: d;
+    background-color: rgb(78, 187, 193);
+}.grid-item:nth-child(5){
+    background-color: rgb(102, 213, 96);
+}.grid-item:nth-child(6){
+    background-color: rgb(169, 145, 67);
+}.grid-item:nth-child(7){
+    background-color: rgb(228, 135, 118);
+}
+.grid-float{
+    /* display: inline; */
+}
+.grid-item-float:first-child{
+    float: right;
+    background-color: rgb(63, 21, 108);
+    width: 30%;
+    height: 100%;
+}.grid-item-float:last-child{
+    /* float: right; */
+    width: 70%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+}
+.grid-flexbox{
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+}
+.grid-item-flex:first-child{
+    background-color: rgb(98, 193, 167);
+    width: 100%;
+    height: 100%;
+}.grid-item-flex:last-child{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(213, 209, 111);
+}
+.grid-flex-row{
+    display: flex;
+    flex-direction: row;
+}
+.grid-item-flexitem:first-child{
+    background-color: rgb(58, 51, 61);
+    width: 100%;
+    height: 100%;
+}.grid-item-flexitem:last-child{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(111, 110, 100);
+}
